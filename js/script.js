@@ -73,6 +73,7 @@ var url_string = window.location.href;
 var url = new URL(url_string);
 var c = url.searchParams.get("gamertag");
 console.log(c);
+alert(c);
 
 // Process keyboard input event
 function input(event) {
