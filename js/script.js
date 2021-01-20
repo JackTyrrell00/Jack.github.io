@@ -71,7 +71,7 @@ var current; // current time
 
 var url_string = window.location.href;
 var url = new URL(url_string);
-var c = url.searchParams.get("?gamertag");
+var c = url.searchParams.get("gamertag");
 console.log(c);
 
 // Process keyboard input event
