@@ -9,6 +9,7 @@ function playerObject(name, img) {
     this.img = img;
     this.x = 0;
     this.y = 0;
+
 	
 }
 
@@ -55,6 +56,8 @@ var frames = 6;
 // Current Frame
 var currentFrame = 0;
 
+
+
 // Sprite
 //var sprite = new Image();
 //sprite.src = "./img/1to6.png"; // Frames 1 to 6
@@ -66,7 +69,10 @@ var currentFrame = 0;
 var initial = new Date().getTime();
 var current; // current time
 
-
+var url_string = window.location.href;
+var url = new URL(url_string);
+var c = url.searchParams.get("?gamertag");
+console.log(c);
 
 // Process keyboard input event
 function input(event) {
@@ -164,4 +170,3 @@ window.requestAnimationFrame(gameloop);
 // Handle Keypressed
 window.addEventListener('keyup', input);
 window.addEventListener('keydown', input);
-
